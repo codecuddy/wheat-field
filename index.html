@@ -56,24 +56,49 @@ myButton.addEventListener('click', doSomething, false)
 function doSomething() {
 	myText.textContent = "hello, world!";
 }
-
-
+var day = 0;
 var field = 1/2;
 var peter = field - (field/3);
-var ivan = 1/2 + peter;
-
-var newPeter = ivan - (ivan/3);
-var newIvan = 1 - newPeter;
-
-
+var ivan = field + (peter/2);
+var updatePeter = (field + peter) - ((field + peter)/3);
+var updateIvan = 1 - updatePeter;
+var newPeter = peter + field - peter/3
 
 
+
+
+var day = 0
 var field = 1/2;
 var peter = field - (field/3);
-var ivan = field + peter;
-var receivingPeter = (field + peter) - ((field + peter)/3);
+var ivan = field + (peter/2);
+var updatePeter = ((2*field + 2*peter)/3);
+var updateIvan = 1 - updatePeter;
+var newPeter = updatePeter - (updatePeter/3);
 
-var givingIvan = receivingIvan - (receivingIvan/3);
+
+var day = 0
+var field = 1/2;
+var peter = field - (field/3);
+var ivan = field + (peter/2);
+var peter = ((2*field + 2*peter)/3);
+var ivan = 1 - updatePeter;
+var peter = updatePeter - (updatePeter/3);
+
+
+function wheatField() {        
+        for (day = 0; day < 11; day++) {
+            
+            var field = 1/2;
+			var peter = field - (field/3);
+			var ivan = field + (peter/2);
+			var peter = ((2*field + 2*peter)/3);
+			var ivan = 1 - updatePeter;  
+			
+			
+            }    
+        }
+    }
+    wheatField();
 
 </script>
 
