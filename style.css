@@ -1,0 +1,44 @@
+body {
+    background-color: navy;
+    color: gold;
+}
+
+.jumbotron {
+    background-color: navy;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+#addPhraseToTranslate {
+    background-color: red;
+    color: green;    
+}
+
+.phrases {
+    text-align: center;
+}
+
+#showPigLatinAfter, #showPigLatinBefore {
+    color: white;
+    width: 200px;
+    margin: auto;
+    font-size: 24px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 16px;
+    margin: 25px;
+    color: silver;
+}
+
+a {
+    color: green;
+}
+
+hr {
+    border: .8px solid green;
+}

@@ -1,122 +1,54 @@
 <!DOCTYPE html>
-<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
-<html lang="en-us">
 
-<head>
-<meta charset="utf-8">
-<title>Hello...</title>
-<style type="text/css">
-#mainContent {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: xx-large;
-	font-weight: bold;
-	background-color: #E3F0FB;
-	border-radius: 4px;
-	padding: 10px;
-	text-align: center;
-}
-.buttonStyle {
-	border-radius: 4px;
-	border: thin solid #F0E020;
-	padding: 5px;
-	background-color: #F8F094;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	font-weight: bold;
-	color: #663300;
-	width: 75px;
-}
+<html>
+    <head>
+        <title>Wheat Field</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
 
-.buttonStyle:hover {
-	border: thin solid #FFCC00;
-	background-color: #FCF9D6;
-	color: #996633;
-	cursor: pointer;
-}
-.buttonStyle:active {
-	border: thin solid #99CC00;
-	background-color: #F5FFD2;
-	color: #669900;
-	cursor: pointer;
-}
-
-</style>
-</head>
-
-<body>
-<div id="mainContent">
-<p id="helloText">?</p>
-<button id="clickButton" class="buttonStyle">click me</button>
-</div>
-<script> 
-var myButton = document.getElementById("clickButton");
-var myText = document.getElementById("helloText");
-
-myButton.addEventListener('click', doSomething, false)
-
-function doSomething() {
-	myText.textContent = "hello, world!";
-}
-var day = 0;
-var field = 1/2;
-var peter = field - (field/3);
-var ivan = field + (peter/2);
-var updatePeter = (field + peter) - ((field + peter)/3);
-var updateIvan = 1 - updatePeter;
-var newPeter = peter + field - peter/3
-
-
-
-
-var day = 0
-var field = 1/2;
-var peter = field - (field/3);
-var ivan = field + (peter/2);
-var updatePeter = ((2*field + 2*peter)/3);
-var updateIvan = 1 - updatePeter;
-var newPeter = updatePeter - (updatePeter/3);
-
-
-var day = 0
-var field = 1/2;
-var peter = field - (field/3);
-var ivan = field + (peter/2);
-var peter = ((2*field + 2*peter)/3);
-var ivan = 1 - updatePeter;
-var peter = updatePeter - (updatePeter/3);
-
-
-function wheatField() {        
-        for (day = 0; day < 11; day++) {
-            
-            var field = 1/2;
-			var peter = field - (field/3);
-			var ivan = field + (peter/2);
-			var peter = ((2*field + 2*peter)/3);
-			var ivan = 1 - updatePeter;  
-			
-			
-            }    
-        }
-    }
-    wheatField();
-    
-    
-    
-    
-    
-value1 = 1/2;
-
-value2 = 1/2;
-
-value1 = value1 - (value1/3);
-
-value2 = value2 + value1/2;
-
-value1 = (value2 - value2/3);
-
-value2 = 1 - value4;
-
-</script>
-
-</body>
+<!-- ##############
+	 #### BODY ####
+	 ##############  -->  
+	 
+    <body>
+    <div class="jumbotron">
+    	<div class="container">
+	    <h1 id="title">Wheat Field</h1>
+	    <p>Two brothers inherit a large field. They decide to split the field 
+	       perfectly in half. However, later that night the younger brother feels that 
+	       his older brother deserves more, and so without telling him, he gives his 
+	       older brother one third of his portion. The older brother, has the same thought, 
+	       and decides to give his brother one third of his land (not realizing that 
+	       his current land was more than half of the field because of the gift from his brother).</p>
+		</div>
+		<div>
+			<p>What percent of the entire field does the younger and older brother now own?</p>
+		
+			<p>What if the brothers continued giving one third of their field to the other each night, 
+			   what percent would each own after ten nights? </p>
+		</div>
+		
+		<div>
+		    <div class="numberBox">
+		        <h3 class="showNumber">Younger Brother: <span id="futurePrimeNumber"></span> </h3>
+		        <h3 class="showNumber">Older Brother:</br> <span id="currentPrimeNumber"></span> </h3>
+		    </div>
+		    </br>
+		    <div id="nextPrimeButtonDiv">
+		        <button id="nextPrime" onclick="nextDayClick();">Next Day</button> 
+		    </div>
+	    </div>
+	    
+<!-- ##############
+	 ### FOOTER ###
+	 ##############  -->
+	 
+	    </br><hr>
+	    <div class="footer">
+	        <p>&#169 <a href="https://github.com/codecuddy">Charlie Cuddy</a></p>
+	    </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    </body>
 </html>
+
