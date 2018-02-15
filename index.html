@@ -13,15 +13,17 @@
     <body>
     <div class="jumbotron">
     	<div class="container">
-	    <h1 id="title">Wheat Field</h1>
-	    <p>Two brothers inherit a large field. They decide to split the field 
-	       perfectly in half. However, later that night the younger brother feels that 
-	       his older brother deserves more, and so without telling him, he gives his 
-	       older brother one third of his portion. The older brother, has the same thought, 
-	       and decides to give his brother one third of his land (not realizing that 
-	       his current land was more than half of the field because of the gift from his brother).</p>
+            <h1 id="title">Wheat Field</h1>
+            <div class="premis">
+                <p>Two brothers inherit a large wheat field. They decide to split the field 
+                   perfectly in half. However, later that night the younger brother feels that 
+                   his older brother deserves more, and so without telling him, he gives his 
+                   older brother one third of his portion. The older brother, has the same thought, 
+                   and decides to give his brother one third of his land (not realizing that 
+                   his current land was more than half of the field because of the gift from his brother). Answer the following:</p>
+            </div>
 		</div>
-		<div>
+		<div class="questions">
 			<p>What percent of the entire field does the younger and older brother now own?</p>
 		
 			<p>What if the brothers continued giving one third of their field to the other each night, 
@@ -29,13 +31,14 @@
 		</div>
 		
 		<div>
-		    <div class="numberBox">
-		        <h3 class="showNumber">Younger Brother: <span id="futurePrimeNumber"></span> </h3>
-		        <h3 class="showNumber">Older Brother:</br> <span id="currentPrimeNumber"></span> </h3>
+		    <div class="results">
+                <h2 class="dayCount">Day: <span id="dayCount"> 0</span> </h2>
+                <h3 class="brothers">Younger Brother: <span id="youngerBrotherPercent">  50</span>% </h3>
+                <h3 class="brothers">Older Brother:<span id="olderBrotherPercent"> 50</span>%</h3>
 		    </div>
 		    </br>
-		    <div id="nextPrimeButtonDiv">
-		        <button id="nextPrime" onclick="nextDayClick();">Next Day</button> 
+		    <div id="nextDayButtonDiv">
+		        <button id="nextDay" onclick="nextDayClick();">Next Day</button> 
 		    </div>
 	    </div>
 	    

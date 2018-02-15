@@ -7,25 +7,48 @@ body {
     background-color: navy;
 }
 
+#title {
+    text-align: center;
+    color: orangered;
+
+}
+
 .container {
+    padding: 40px 60px 5px 60px;
+}
+
+.premis {
+    font-style: italic;
+}
+
+.questions {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.dayCount {
     text-align: center;
-    width: 100%;
 }
 
-#addPhraseToTranslate {
-    background-color: red;
-    color: green;    
+#dayCount {
+    color: orangered;
 }
 
-.phrases {
-    text-align: center;
+.brothers {
+    display: flex;
+    padding-left: 80px;
+    width: 500px;
 }
 
-#showPigLatinAfter, #showPigLatinBefore {
-    color: white;
-    width: 200px;
-    margin: auto;
-    font-size: 24px;
+#youngerBrotherPercent, #olderBrotherPercent {
+    color: orangered;
+    padding-left: 10px;
+}
+
+#nextDayButtonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
